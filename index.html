@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gere uma senha aleatória, segura e personalizada.">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <main class="conteudo">
+        <header class="conteudo-titulo">
+            <img class="icone-cadeado" src="unlock.svg" alt="Cadeado aberto">
+            <h1 class="titulo-principal">Gerador de senhas</h1>
+            <p class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</p>
+        </header>
+
+        <section class="conteudo-senha" aria-labelledby="senha-label">
+            <label id="senha-label" for="campo-senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly aria-live="polite" aria-label="Senha gerada">
+        </section>
+
+        <section class="parametro" aria-labelledby="parametro-titulo">
+            <h2 id="parametro-titulo" class="parametro-titulo">Personalize sua senha</h2>
+
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h3 class="parametro-senha__titulo">Número de caracteres</h3>
+                    <div class="parametro-senha-botoes" aria-label="Quantidade de caracteres">
+                        <button class="parametro-senha__botao" id="diminuir-caracteres" type="button" aria-label="Diminuir quantidade de caracteres">−</button>
+                        <output class="parametro-senha__texto" id="quantidade-caracteres" aria-live="polite">12</output>
+                        <button class="parametro-senha__botao" id="aumentar-caracteres" type="button" aria-label="Aumentar quantidade de caracteres">+</button>
+                    </div>
+                </div>
+
+                <fieldset class="parametro-senha">
+                    <legend class="parametro-senha__titulo">Características da senha</legend>
+                    <label class="opcao-caracteristica" for="maiusculas">
+                        <input class="checkbox-caracteristica" type="checkbox" id="maiusculas" checked>
+                        <span>Letras maiúsculas</span>
+                    </label>
+                    <label class="opcao-caracteristica" for="minusculas">
+                        <input class="checkbox-caracteristica" type="checkbox" id="minusculas" checked>
+                        <span>Letras minúsculas</span>
+                    </label>
+                    <label class="opcao-caracteristica" for="numeros">
+                        <input class="checkbox-caracteristica" type="checkbox" id="numeros">
+                        <span>Números</span>
+                    </label>
+                    <label class="opcao-caracteristica" for="simbolos">
+                        <input class="checkbox-caracteristica" type="checkbox" id="simbolos">
+                        <span>Símbolos</span>
+                    </label>
+                </fieldset>
+
+                <div class="parametro-senha parametro-forca">
+                    <h3 class="parametro-senha__titulo">Força da senha</h3>
+                    <div class="barra-forca" aria-hidden="true">
+                        <span id="nivel-forca"></span>
+                    </div>
+                    <div class="legenda-forca" aria-hidden="true">
+                        <span>Fraca</span>
+                        <span>Média</span>
+                        <span>Forte</span>
+                    </div>
+                    <p class="texto-forca" id="texto-forca" aria-live="polite">Fraca</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
