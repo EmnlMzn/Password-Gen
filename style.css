@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-3');
 
 :root {
     --branco: #ffffff;
@@ -25,7 +25,7 @@ body {
     margin: 0;
     color: var(--branco);
     background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
+    font-family: Minecraft;
 }
 
 .conteudo {
@@ -48,7 +48,7 @@ body {
 
 .titulo-principal {
     margin: 0;
-    font-family: var(--roboto-mono);
+    font-family: Minecraft;
     font-size: clamp(28px, 3vw, 34px);
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -84,14 +84,14 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    font-family: var(--roboto-mono);
+    font-family: Minecraft;
     font-size: clamp(28px, 3.2vw, 40px);
     text-overflow: ellipsis;
 }
 
 #campo-senha.campo-invalido {
     color: var(--vermelho);
-    font-family: var(--roboto);
+    font-family: Minecraft;
     font-size: 22px;
 }
 
@@ -150,7 +150,7 @@ body {
     color: var(--branco);
     background-color: transparent;
     border: 2px solid var(--borda);
-    font-family: var(--roboto);
+    font-family: Minecraft;
     font-size: 21px;
     font-weight: 700;
 }
